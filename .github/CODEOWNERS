@@ -1,0 +1,34 @@
+# CODEOWNERS file for tracking-monitor-664
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-security @Armor-test/dept-billing @Armor-test/team-research
+
+# Directory ownership
+/app/ @Armor-test/unit-test @Armor-test/dept-identity @Armor-test/squad-ml
+/build/ @Armor-test/squad-payments @Armor-test/grp-reporting @Armor-test/grp-integration
+/spec/ @Armor-test/grp-api @Armor-test/squad-payments
+/extensions/ @Armor-test/dept-logging @Armor-test/unit-governance
+/src/ @Armor-test/dept-billing @Armor-test/team-security
+/components/ @Armor-test/team-security @Armor-test/squad-mobile
+/config/ @Armor-test/unit-governance @Armor-test/dept-ui
+/helpers/ @Armor-test/team-reporting @Armor-test/team-notifications @Armor-test/squad-search
+/public/ @Armor-test/unit-governance @Armor-test/dept-identity @Armor-test/dept-billing
+/test/ @Armor-test/grp-storage @Armor-test/dept-ui
+/vendor/ @Armor-test/dept-reliability @Armor-test/dept-billing @Armor-test/squad-payments
+
+# File type ownership
+*.yml @Armor-test/unit-test @Armor-test/grp-storage @Armor-test/squad-performance
+*.ts @Armor-test/squad-performance @Armor-test/dept-automation
+*.sql @Armor-test/squad-cache @Armor-test/team-core @Armor-test/grp-reporting
+*.php @Armor-test/squad-qa @Armor-test/dept-security
+*.cs @Armor-test/dept-data @Armor-test/team-governance @Armor-test/squad-apps
+*.gradle @Armor-test/dept-logging @Armor-test/squad-payments
+*.toml @Armor-test/team-core @Armor-test/team-frontend
+*.graphql @Armor-test/team-reporting @Armor-test/team-security @Armor-test/dept-reporting
+*.c @Armor-test/squad-cloud @Armor-test/team-notifications
+*.proto @Armor-test/squad-tooling @Armor-test/team-notifications
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
